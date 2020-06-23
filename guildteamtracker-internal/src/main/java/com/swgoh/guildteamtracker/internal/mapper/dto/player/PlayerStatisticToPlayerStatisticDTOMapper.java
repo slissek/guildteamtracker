@@ -1,6 +1,5 @@
 package com.swgoh.guildteamtracker.internal.mapper.dto.player;
 
-import org.mapstruct.IterableMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
 
@@ -19,7 +18,6 @@ public interface PlayerStatisticToPlayerStatisticDTOMapper {
 
     ModStatisticDTO toResource(ModStatistic source);
 
-    @IterableMapping
     PlayerRosterDTO toResource(PlayerRoster source);
 
     PlayerRosterStatisticDTO toResource(PlayerRosterStatistic source);

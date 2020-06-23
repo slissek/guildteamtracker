@@ -2,10 +2,10 @@ package com.swgoh.guildteamtracker.domain.dto.enums;
 
 public enum UnitCombatTypeEnum {
 
-    //@formatter:off
-    CHARACTER (1),
-    SHIP (2);
-    //@formatter:on
+    // @formatter:off
+    CHARACTER(1), 
+    SHIP(2);
+    // @formatter:on
 
     private final Integer modSetId;
 
@@ -20,5 +20,9 @@ public enum UnitCombatTypeEnum {
             }
         }
         return null;
+    }
+
+    public Integer getId() {
+        return modSetId;
     }
 }

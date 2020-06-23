@@ -1,6 +1,5 @@
 package com.swgoh.guildteamtracker.internal.mapper.dao.player;
 
-import org.mapstruct.IterableMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
 
@@ -15,6 +14,5 @@ public interface PlayerDAOToPlayerMapper {
 
     Player toResource(PlayerDAO source);
 
-    @IterableMapping
     PlayerRoster toResource(PlayerRosterDAO soruce);
 }

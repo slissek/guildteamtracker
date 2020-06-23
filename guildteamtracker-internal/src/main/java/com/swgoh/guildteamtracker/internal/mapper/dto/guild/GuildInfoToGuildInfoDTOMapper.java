@@ -1,6 +1,5 @@
 package com.swgoh.guildteamtracker.internal.mapper.dto.guild;
 
-import org.mapstruct.IterableMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
 
@@ -20,6 +19,5 @@ public interface GuildInfoToGuildInfoDTOMapper {
 
     RaidDTO toResource(Raid source);
 
-    @IterableMapping
     RosterDTO toResource(Roster source);
 }

@@ -1,6 +1,5 @@
 package com.swgoh.guildteamtracker.internal.mapper.dto.player;
 
-import org.mapstruct.IterableMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
 
@@ -22,19 +21,15 @@ import com.swgoh.guildteamtracker.internal.mapper.util.LocalDateTimeMapper;
 @Mapper(config = MappingConfig.class, unmappedTargetPolicy = ReportingPolicy.IGNORE, uses = LocalDateTimeMapper.class)
 public interface PlayerToPlayerDTOMapper {
 
-    @IterableMapping
     ModDTO toResource(Mod mod);
 
     ModPrimaryStatDTO toResource(ModPrimaryStat primaryStat);
 
-    @IterableMapping
     ModSecondaryStatDTO toResource(ModSecondaryStat secondaryStat);
 
     PlayerDTO toResource(Player source);
 
-    @IterableMapping
     PlayerRosterDTO toResource(PlayerRoster source);
 
-    @IterableMapping
     SkillDTO toResource(Skill skill);
 }

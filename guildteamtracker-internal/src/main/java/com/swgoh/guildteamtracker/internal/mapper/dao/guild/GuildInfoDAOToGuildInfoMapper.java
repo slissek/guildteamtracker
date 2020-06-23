@@ -1,6 +1,5 @@
 package com.swgoh.guildteamtracker.internal.mapper.dao.guild;
 
-import org.mapstruct.IterableMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
 
@@ -17,6 +16,5 @@ public interface GuildInfoDAOToGuildInfoMapper {
 
 //    Raid toResource(RaidDAO source);
 
-    @IterableMapping
     Roster toResource(RosterDAO source);
 }
